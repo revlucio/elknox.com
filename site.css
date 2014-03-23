@@ -30,3 +30,12 @@ img {
 h1 {
 	color: white;
 }
+
+.nav {
+	float: right;
+	clear: both;
+}
+
+.panel {
+	clear: both;
+}
