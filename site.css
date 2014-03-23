@@ -1,10 +1,16 @@
-body, html {
+html, body {
+	background: url('images/londonbg.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 100%;
 }
 
 .container {
 	width: 70%;
-	background-color: lightgrey;
+	background-color: rgba(0,0,0,0.7);
+	margin-top: 2%;
 	height: 100%;
 }
 
@@ -12,3 +18,7 @@ img {
 	width: 500;
 	height: 300;
 } 
+
+h1 {
+	color: white;
+}
