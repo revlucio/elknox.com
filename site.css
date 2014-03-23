@@ -11,13 +11,21 @@ html, body {
 	width: 70%;
 	background-color: rgba(0,0,0,0.7);
 	margin-top: 2%;
+	margin-bottom: 2%;
+	height: 100%;
+}
+
+.carousel {
+	height: 50%;
+}
+
+.carousel-inner, .item, img {
 	height: 100%;
 }
 
 img {
-	width: 500;
-	height: 300;
-} 
+	width: 100%;
+}
 
 h1 {
 	color: white;
