@@ -10,12 +10,26 @@
 
     <link href="content/css/bootstrap.css" rel="stylesheet" />
     <link href="content/css/main.css" rel="stylesheet" />
+    <link href="content/css/modal.css" rel="stylesheet" />
 
     <script type="text/javascript" src="scripts/vendor/angular-1.3.3.js"></script>
     <script type="text/javascript" src="scripts/app.js"></script>
     <script type="text/javascript" src="scripts/vendor/masonry-3.2.1.js"></script>
+
+    <script type="text/javascript" src="scripts/vendor/jquery-1.9.0.min.js"></script>
+    <link rel="stylesheet" href="scripts/vendor/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="scripts/vendor/fancybox/source/jquery.fancybox.pack.js"></script>
 </head>
     <body ng-controller="NavController as vm">
+
+        <div class="img-popup" ng-if="vm.showPopup">
+            <div>
+                <div ng-click="vm.showPopup = false">X</div>
+                <img ng-src="/content/img/{{vm.imgSrc}}.jpg"></img>
+                <span>{{vm.title}}</span>
+            </div>
+        </div>
+
         <div class="content">
             <div class="row title-row">
                 <div class="col-xs-4">
@@ -46,27 +60,28 @@
                     </div>
 
                     <div class="col-xs-3 sexy">
-                        <img src="content/img/sexy.png"></img>
+                        <sexyimg src="content/img/sexy.png"></img>
                     </div>
                 </div>
 
                 <div class="col-xs-9 main-content" >
+
                    <div id="gallery" class="js-masonry" data-masonry-options='{ "gutter":10, "itemSelector": ".item" }'>
-                        <img class="item" src="/content/img/boobs.jpg"></img>
-                        <img class="item" src="/content/img/blue.jpg"></img>
-                        <img class="item" src="/content/img/boobs2.jpg"></img>
-                        <img class="item" src="/content/img/crazy-monsters.jpg"></img>
-                        <img class="item" src="/content/img/face.jpg"></img>
-                        <img class="item" src="/content/img/faces-of-liz.jpg"></img>
-                        <img class="item" src="/content/img/fish.jpg"></img>
-                        <img class="item" src="/content/img/head.jpg"></img>
-                        <img class="item" src="/content/img/hip-bones.jpg"></img>
-                        <img class="item" src="/content/img/naked.jpg"></img>
-                        <img class="item" src="/content/img/palace.jpg"></img>
-                        <img class="item" src="/content/img/pelvis.jpg"></img>
-                        <img class="item" src="/content/img/strange.jpg"></img>
-                        <img class="item" src="/content/img/winos.jpg"></img>
-                        <img class="item" src="/content/img/yellow.jpg"></img>
+                        <img class="item" ng-click="vm.select('boobs')" src="/content/img/boobs.jpg"></img>
+                        <img class="item" ng-click="vm.select('blue')" src="/content/img/blue.jpg"></img>
+                        <img class="item" ng-click="vm.select('boobs2')" src="/content/img/boobs2.jpg"></img>
+                        <img class="item" ng-click="vm.select('crazy-monsters')" src="/content/img/crazy-monsters.jpg"></img>
+                        <img class="item" ng-click="vm.select('face')" src="/content/img/face.jpg"></img>
+                        <img class="item" ng-click="vm.select('faces-of-liz')" src="/content/img/faces-of-liz.jpg"></img>
+                        <img class="item" ng-click="vm.select('fish')" src="/content/img/fish.jpg"></img>
+                        <img class="item" ng-click="vm.select('head')" src="/content/img/head.jpg"></img>
+                        <img class="item" ng-click="vm.select('hip-bones')" src="/content/img/hip-bones.jpg"></img>
+                        <img class="item" ng-click="vm.select('naked')" src="/content/img/naked.jpg"></img>
+                        <img class="item" ng-click="vm.select('palace')" src="/content/img/palace.jpg"></img>
+                        <img class="item" ng-click="vm.select('pelvis')" src="/content/img/pelvis.jpg"></img>
+                        <img class="item" ng-click="vm.select('strange')" src="/content/img/strange.jpg"></img>
+                        <img class="item" ng-click="vm.select('winos')" src="/content/img/winos.jpg"></img>
+                        <img class="item" ng-click="vm.select('yellow')" src="/content/img/yellow.jpg"></img>
                    </div>
                 </div>
 
