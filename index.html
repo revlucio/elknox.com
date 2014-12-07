@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-3 navbar">
+                <div class="col-xs-2 navbar">
                     <h2 ng-class="{ selected: (vm.state === 'gallery')}" ng-click="vm.state = 'gallery'">gallery</h2>
                     <h2 ng-class="{ selected: (vm.state === 'bio')}" ng-click="vm.state = 'bio'">artist bio</h2>
                     <h2 ng-class="{ selected: (vm.state === 'blog')}" ng-click="vm.state = 'blog'">blog</h2>
@@ -50,15 +50,23 @@
                     </div>
                 </div>
 
-                <div class="col-xs-8 main-content" ng-if="vm.state === 'gallery'">
-                   <div id="gallery" class="js-masonry" data-masonry-options="{ 'columnWidth': 200, 'itemSelector': '.item' }">
+                <div class="col-xs-9 main-content" >
+                   <div id="gallery" class="js-masonry" data-masonry-options='{ "gutter":10, "itemSelector": ".item" }'>
                         <img class="item" src="/content/img/boobs.jpg"></img>
-                        <img class="item" src="/content/img/bg-1366.jpg"></img>
-                        <img class="item" src="/content/img/boobs.jpg"></img>
-                        <img class="item" src="/content/img/sexy.png"></img>
-                        <img class="item" src="/content/img/boobs.jpg"></img>
-                        <img class="item" src="/content/img/boobs.jpg"></img>
-                        <img class="item" src="/content/img/boobs.jpg"></img>
+                        <img class="item" src="/content/img/blue.jpg"></img>
+                        <img class="item" src="/content/img/boobs2.jpg"></img>
+                        <img class="item" src="/content/img/crazy-monsters.jpg"></img>
+                        <img class="item" src="/content/img/face.jpg"></img>
+                        <img class="item" src="/content/img/faces-of-liz.jpg"></img>
+                        <img class="item" src="/content/img/fish.jpg"></img>
+                        <img class="item" src="/content/img/head.jpg"></img>
+                        <img class="item" src="/content/img/hip-bones.jpg"></img>
+                        <img class="item" src="/content/img/naked.jpg"></img>
+                        <img class="item" src="/content/img/palace.jpg"></img>
+                        <img class="item" src="/content/img/pelvis.jpg"></img>
+                        <img class="item" src="/content/img/strange.jpg"></img>
+                        <img class="item" src="/content/img/winos.jpg"></img>
+                        <img class="item" src="/content/img/yellow.jpg"></img>
                    </div>
                 </div>
 

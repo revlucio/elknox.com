@@ -23,11 +23,9 @@
 }
 
 .content {
-  position: fixed;
   left: 0;
   right: 0;
   z-index: 0;
-
   color: white;
 }
 
@@ -91,7 +89,6 @@ small i {
 	padding: 1em 1em;
 	margin: 1em 1em;
 	background-color: rgba(0, 0, 0, 0.55);
-	height: 800px;
 }
 
 .sexy {
@@ -104,5 +101,6 @@ p {
 }
 
 .item {
-	width: 300px;
+	width: 32%;
+	margin-bottom: 10px;
 }
