@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
 <head>
     <title></title>
@@ -13,20 +13,19 @@
 
     <script type="text/javascript" src="scripts/vendor/angular-1.3.3.js"></script>
     <script type="text/javascript" src="scripts/app.js"></script>
+    <script type="text/javascript" src="scripts/vendor/masonry-3.2.1.js"></script>
 </head>
     <body ng-controller="NavController as vm">
         <div class="content">
             <div class="row title-row">
-            <div class="col-xs-4">
-                logo here + fb and contact thingies
-            </div>
+                <div class="col-xs-4">
+                    logo here + fb and contact thingies
+                </div>
 
-            <div class="col-xs-8 title">
-                <h1>Elizabeth L. Knox </h1>
-                <small>artist <i>|</i> archaeologist <i>|</i> bio-anthropologist</small>
-            </div>
-
-                
+                <div class="col-xs-8 title">
+                    <h1>Elizabeth L. Knox </h1>
+                    <small>artist <i>|</i> archaeologist <i>|</i> bio-anthropologist</small>
+                </div>
             </div>
             <div class="row">
                 <div class="col-xs-3 navbar">
@@ -36,8 +35,8 @@
                     <h2 ng-class="{ selected: (vm.state === 'sketches')}" ng-click="vm.state = 'sketches'">sketches</h2>
                 </div>
 
-                <div ng-if="vm.state === 'bio'">
-                    <div class="col-xs-6 main-content" >
+                <div class="col-xs-8 main-content" ng-if="vm.state === 'bio'">
+                    <div class="col-xs-8" >
                         <p>                    
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
                         </p>
@@ -51,9 +50,27 @@
                     </div>
                 </div>
 
-                <div class="col-xs-6" ng-if="vm.state === 'gallery'">
+                <div class="col-xs-8 main-content" ng-if="vm.state === 'gallery'">
+                   <div id="gallery" class="js-masonry" data-masonry-options="{ 'columnWidth': 200, 'itemSelector': '.item' }">
+                        <img class="item" src="/content/img/boobs.jpg"></img>
+                        <img class="item" src="/content/img/bg-1366.jpg"></img>
+                        <img class="item" src="/content/img/boobs.jpg"></img>
+                        <img class="item" src="/content/img/sexy.png"></img>
+                        <img class="item" src="/content/img/boobs.jpg"></img>
+                        <img class="item" src="/content/img/boobs.jpg"></img>
+                        <img class="item" src="/content/img/boobs.jpg"></img>
+                   </div>
+                </div>
+
+                <div class="col-xs-8 main-content" ng-if="vm.state === 'blog'">
                     <p> 
-                        GALLERY HERE!
+                        BLOG HERE!
+                    </p>
+                </div>
+
+                <div class="col-xs-8 main-content" ng-if="vm.state === 'sketches'">
+                    <p> 
+                        SKETCHES HERE!
                     </p>
                 </div>
             </div>

@@ -89,6 +89,9 @@ small i {
 
 .main-content {
 	padding: 1em 1em;
+	margin: 1em 1em;
+	background-color: rgba(0, 0, 0, 0.55);
+	height: 800px;
 }
 
 .sexy {
@@ -98,4 +101,8 @@ small i {
 p {
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.2em;
+}
+
+.item {
+	width: 300px;
 }
