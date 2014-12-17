@@ -29,17 +29,6 @@
   color: white;
 }
 
-h1 {
-	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.33);
-	font-size: 5em;
-	font-family: 'Special Elite', cursive;
-	padding-right: 0.2em;
-	line-height: 0.5em;
-	padding-top: 0.1em;
-	padding-bottom: 0;
-	margin-bottom: 0;
-}
-
 small {
 	display: block;
 	font-size: 1.5em;
@@ -154,16 +143,23 @@ p {
 }
 
 @media screen and (max-width: 1004px) {
-	.home-text {
-		display: none;
-	}
-
-	.title-row i {
+	.home-text, .title-row i, h1 {
 		display: none;
 	}
 }
 
 @media screen and (min-width: 1004px) {
+	h1 {
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.33);
+		font-size: 5em;
+		font-family: 'Special Elite', cursive;
+		padding-right: 0.2em;
+		line-height: 0.5em;
+		padding-top: 0.1em;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
 	.home-text {
 		display: block;
 		font-size: 4em;
