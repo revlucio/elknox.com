@@ -89,16 +89,6 @@ small i {
 	height: 100px;
 }
 
-.title-row div {
-	float: left;
-	padding-right: 1em;
-}
-
-.title-row i {
-	padding-top: 55px;
-	color: white;
-}
-
 .main-content {
 	padding: 1em 1em;
 	margin: 1em 1em;
@@ -163,14 +153,36 @@ p {
 	text-align:center;
 }
 
-.home-text {
-	display: block;
-	font-size: 4em;
-	color: #990000;
-	font-family: 'Raleway', sans-serif;
-	letter-spacing: 0.25em;
-	font-weight: bold;
-	margin:auto;
-	width: 5em;
-	line-height: 500px;
+@media screen and (max-width: 1004px) {
+	.home-text {
+		display: none;
+	}
+
+	.title-row i {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1004px) {
+	.home-text {
+		display: block;
+		font-size: 4em;
+		color: #990000;
+		font-family: 'Raleway', sans-serif;
+		letter-spacing: 0.25em;
+		font-weight: bold;
+		margin:auto;
+		width: 5em;
+		line-height: 500px;
+	}
+
+	.title-row div {
+		float: left;
+		padding-right: 1em;
+	}
+
+	.title-row i {
+		padding-top: 55px;
+		color: white;
+	}
 }
