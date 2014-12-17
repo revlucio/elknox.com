@@ -14,8 +14,6 @@
 
     <script type="text/javascript" src="scripts/vendor/angular-1.3.3.js"></script>
     <script type="text/javascript" src="scripts/app.js"></script>
-    <script type="text/javascript" src="scripts/vendor/masonry-3.2.1.js"></script>
-    <script type="text/javascript" src="scripts/vendor/fancybox/source/jquery.fancybox.pack.js"></script>
 </head>
     <body ng-controller="NavController as vm">
 
@@ -62,8 +60,8 @@
                         </p>
                     </div>
 
-                    <div class="col-xs-3 sexy">
-                        <sexyimg src="content/img/sexy.png"></img>
+                    <div class="col-xs-3">
+                        <img src="content/img/sexy.png"></img>
                     </div>
                 </div>
 
@@ -94,15 +92,64 @@
                 </div>
 
                 <div class="col-xs-8 main-content" ng-if="vm.state === 'blog'">
+                    <h2>Welcome to my website! <small>posted on december 17, 2014</small></h2>
                     <p> 
-                        BLOG HERE!
+                        To be honest I always struggle to find an answer which seems to satisfy both the eager listener and my own ego. I have always been inspired by surrealists and the work they produce across mediums, anything which catapults you into a different way of thinking, even if there is no greater, deeper reason for it other than that it is possible.. or why not!
+                    </p>
+                    <p>
+                        A side to this I have an incurable desire  for perfection and accuracy which has led me to attempt more scientific illustrations, leading to the new desire to merge my love of painting and drawing with my career in archaeology and osteology. I will be updating my gallery with these pieces as they are produced, and hopefully in time have enough to separate them into a separate portfolio. 
+                     </p>
+                     <p>
+                        This Blog is going to be a bit of a mix bag really, I am intending to document and discuss things that inspire me, from my archaeology work, travelling and sites around London, to art exhibitions and conferences. So I hope you like what you see and visit me again with and hot cup of coffee or a nice glass of red, and I will do my darndest to entertain you..... somehow. 
+                    </p>
+                    <p>
+                        Yours Sincerely
+                    </p>
+                    <p>
+                        Elizabeth L. Knox.
                     </p>
                 </div>
 
                 <div class="col-xs-8 main-content" ng-if="vm.state === 'sketches'">
-                    <p> 
-                        SKETCHES HERE!
-                    </p>
+                    <div id="gallery" >
+                       <div class="column2">
+                           <img class="item" src="/content/img/sketches/001.jpg"></img>
+                           <img class="item" src="/content/img/sketches/002.jpg"></img>
+                           <img class="item" src="/content/img/sketches/003.jpg"></img>
+                           <img class="item" src="/content/img/sketches/004.jpg"></img>                             
+                           <img class="item" src="/content/img/sketches/007.jpg"></img>
+                           <img class="item" src="/content/img/sketches/008.jpg"></img>                         
+                       </div>
+                       <div class="column2">
+                           <img class="item" src="/content/img/sketches/005.jpg"></img>
+                           <img class="item" src="/content/img/sketches/006.jpg"></img>
+                       </div>
+                       <div class="column2">
+                           <img class="item" src="/content/img/sketches/009.jpg"></img>
+                           <img class="item" src="/content/img/sketches/010.jpg"></img>
+                           <img class="item" src="/content/img/sketches/011.jpg"></img>
+                           <img class="item" src="/content/img/sketches/012.jpg"></img>
+                       </div>
+                       <div class="column2">
+                           <img class="item" src="/content/img/sketches/013.jpg"></img>
+                           <img class="item" src="/content/img/sketches/014.jpg"></img>
+                           <img class="item" src="/content/img/sketches/015.jpg"></img>
+                           <img class="item" src="/content/img/sketches/016.jpg"></img>
+                           
+                           <img class="item" src="/content/img/sketches/022.jpg"></img>
+                           <img class="item" src="/content/img/sketches/023.jpg"></img>
+                           <img class="item" src="/content/img/sketches/024.jpg"></img>
+                       </div>
+                       <div class="column2">
+                           <img class="item" src="/content/img/sketches/017.jpg"></img>
+                           <img class="item" src="/content/img/sketches/018.jpg"></img>
+                           <img class="item" src="/content/img/sketches/019.jpg"></img>
+                           <img class="item" src="/content/img/sketches/020.jpg"></img>
+                       </div>
+                       <div class="column2">
+                           <img class="item" src="/content/img/sketches/021.jpg"></img>
+                       </div>
+                   </div>
                 </div>
             </div>
         </div>

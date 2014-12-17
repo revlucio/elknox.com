@@ -133,8 +133,14 @@ p {
      text-align:center;
 }
 
-#gallery .column {
+.column {
 	width: 32%;
+	float: left;
+	padding: 5px 5px;
+}
+
+.column2 {
+	width: 15%;
 	float: left;
 	padding: 5px 5px;
 }
