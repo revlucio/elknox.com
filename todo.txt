@@ -1,0 +1,29 @@
+-lizs website
+-speaker tracker
+-personal site
+
+ELKNOX.COM
+==========
+-do i want to design it myself, or get a custom theme and customize? probably the latter...
+
+
+although could keep the website really really simple! do it all myself in angular...
+
+TODO:
+-bootstrap X
+-her image full size
+
+
+-get a bare bones version using what liz draw up
+-use bootstrap X
+-get her images in there
+-think about angular and plugins to get it shiny
+-want it to work on mobile
+
+http://www.elegantthemes.com/gallery/thestyle/
+
+
+TODO:
+-full screen image
+-fade to white on the right
+-navigation bar in black on the right
