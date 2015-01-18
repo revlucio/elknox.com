@@ -1,5 +1,7 @@
 ﻿body {
 	color: white;
+	background: url('/content/img/canvas-bg.jpg') no-repeat center center fixed;
+	background-size: cover;
 }
 
 .content:before {
@@ -10,16 +12,42 @@
   z-index: -1;
   
   display: block;
-  background: url('/content/img/boobs.jpg') no-repeat center center fixed;
+  background: url('/content/img/canvas-bg.jpg') no-repeat center center fixed;
   width: 100%;
   height: 100%;
   background-size: cover;
-  
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
+}
+
+.intro img {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 30%;
+	min-width: 400px;
+}
+
+.intro {
+  -webkit-transition:all linear 1s;
+  transition:all linear 1s;
+}
+
+.home img {
+	padding-top: 70px;
+	width: 70%;
+}
+
+.content {
+  -webkit-transition:all linear 1s;
+  transition:all linear 1s;
+}
+
+.content.ng-hide {
+  opacity:0;
+}
+
+.intro.ng-hide {
+  opacity:0;
 }
 
 .content {
@@ -143,7 +171,7 @@ p {
 }
 
 @media screen and (max-width: 1004px) {
-	.home-text, .title-row i, h1 {
+	.home-text, .title-row i, h1, .home {
 		display: none;
 	}
 }
