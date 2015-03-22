@@ -78,6 +78,16 @@
       <DependentUpon>bundle.min.js</DependentUpon>
     </Content>
     <Content Include="content\css\bundle.css.bundle" />
+    <Content Include="content\img\sketches\sketches.sprite" />
+    <Content Include="content\img\sketches\sketches.jpg.map">
+      <DependentUpon>sketches.jpg</DependentUpon>
+    </Content>
+    <Content Include="content\img\sketches\sketches.jpg.less">
+      <DependentUpon>sketches.jpg</DependentUpon>
+    </Content>
+    <Content Include="content\img\sketches\sketches.jpg.scss">
+      <DependentUpon>sketches.jpg</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -157,6 +167,12 @@
     <Content Include="content\img\sketches\025.jpg" />
     <Content Include="content\img\sketches\026.jpg" />
     <Content Include="content\img\sketches\027.jpg" />
+    <Content Include="content\img\sketches\sketches.jpg">
+      <DependentUpon>sketches.sprite</DependentUpon>
+    </Content>
+    <Content Include="content\img\sketches\sketches.jpg.css">
+      <DependentUpon>sketches.jpg</DependentUpon>
+    </Content>
     <Content Include="content\img\spine.jpg" />
     <Content Include="content\img\strange.jpg" />
     <Content Include="content\img\winos.jpg" />

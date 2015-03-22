@@ -1,0 +1,60 @@
+{
+  "images": [
+    {
+      "name": "/content/img/sketches/001.jpg",
+      "width": 158,
+      "height": 211,
+      "offsetX": 1,
+      "offsetY": 1
+    },
+    {
+      "name": "/content/img/sketches/002.jpg",
+      "width": 158,
+      "height": 211,
+      "offsetX": 1,
+      "offsetY": 213
+    },
+    {
+      "name": "/content/img/sketches/003.jpg",
+      "width": 158,
+      "height": 211,
+      "offsetX": 1,
+      "offsetY": 425
+    },
+    {
+      "name": "/content/img/sketches/004.jpg",
+      "width": 158,
+      "height": 118,
+      "offsetX": 1,
+      "offsetY": 637
+    },
+    {
+      "name": "/content/img/sketches/005.jpg",
+      "width": 158,
+      "height": 807,
+      "offsetX": 1,
+      "offsetY": 756
+    },
+    {
+      "name": "/content/img/sketches/006.jpg",
+      "width": 158,
+      "height": 211,
+      "offsetX": 1,
+      "offsetY": 1564
+    },
+    {
+      "name": "/content/img/sketches/007.jpg",
+      "width": 158,
+      "height": 211,
+      "offsetX": 1,
+      "offsetY": 1776
+    },
+    {
+      "name": "/content/img/sketches/008.jpg",
+      "width": 158,
+      "height": 211,
+      "offsetX": 1,
+      "offsetY": 1988
+    }
+  ]
+}
