@@ -1,6 +1,0 @@
-C:\code\elknox.com\elknox.com\bin\elknox.com.dll.config
-C:\code\elknox.com\elknox.com\bin\elknox.com.dll
-C:\code\elknox.com\elknox.com\bin\elknox.com.pdb
-C:\code\elknox.com\elknox.com\obj\Debug\elknox.com.csprojResolveAssemblyReference.cache
-C:\code\elknox.com\elknox.com\obj\Debug\elknox.com.dll
-C:\code\elknox.com\elknox.com\obj\Debug\elknox.com.pdb
