@@ -17,11 +17,15 @@ gulp.task('build', function() {
     	.pipe(concat(filename + 'js'))
     	.pipe(gulp.dest('dist'));
 
+    gulp.src(['css/**/*.css', 'css/**/*.css'])
+        .pipe(concat(filename + 'css'))
+        .pipe(gulp.dest('dist'));
+
     gulp.src('index.html')
     	.pipe(replace('app.', filename))
     	.pipe(gulp.dest('dist'));
 });
 
 gulp.task('clean:dist', function() {
-	return del('dist/**/*.js');
+	return del(['dist/**/*.js', 'dist/**/*.css']);
 });
