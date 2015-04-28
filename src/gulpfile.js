@@ -15,7 +15,7 @@ gulp.task('build', function() {
 			'scripts/vendor/angular-animate1.3.3.js',
 			'scripts/**/*.js'])
     	.pipe(concat(filename + 'js'))
-    	.pipe(gulp.dest('../dist'));
+    	.pipe(gulp.dest('dist'));
 
     gulp.src('index.html')
     	.pipe(replace('app.', filename))
