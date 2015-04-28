@@ -13,6 +13,7 @@
   "author": "revlucio",
   "license": "ISC",
   "devDependencies": {
+    "del": "^1.1.1",
     "gulp": "^3.8.11",
     "gulp-angular-templatecache": "^1.6.0",
     "gulp-clean": "^0.3.1",
