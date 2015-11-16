@@ -29,19 +29,19 @@
         <div class="img-popup" ng-if="vm.showPopup">
             <div>
                 <div ng-click="vm.showPopup = false">X</div>
-                <img ng-src="/content/img/{{vm.imgSrc}}.jpg"></img>
+                <img ng-src="content/img/{{vm.imgSrc}}.jpg"></img>
                 <span>{{vm.title}}</span>
             </div>
         </div>
 
         <div class="intro" ng-hide="vm.isIntroDone">
-          <img src="/content/img/logo-bg.gif" />
+          <img src="content/img/logo-bg.gif" />
         </div>
 
         <div class="content" ng-show="vm.isIntroDone">
             <div class="row title-row">
                 <div class="col-xs-4">
-                    <div><img src="/content/img/logo-xs-white.gif" ng-click="vm.state = 'home'" /></div>
+                    <div><img src="content/img/logo-xs-white.gif" ng-click="vm.state = 'home'" /></div>
                     <div>
                         <a href="https://www.linkedin.com/profile/view?id=320535590"><i class="fa fa-linkedin-square fa-3x"></i></a>
                     </div>
@@ -67,7 +67,7 @@
                 </div>
 
                 <div class="col-xs-8 home" ng-if="vm.state === 'home'">
-                  <img src="/content/img/boobs.jpg"/>
+                  <img src="content/img/boobs.jpg"/>
                 </div>
 
                 <div class="col-xs-8 main-content" ng-if="vm.state === 'bio'">
@@ -94,29 +94,29 @@
                 <div class="col-xs-9 main-content" ng-if="vm.state === 'gallery'">
                    <div id="gallery" >
                        <div class="column">
-                           <img class="item" ng-click="vm.select('boobs')" src="/content/img/boobs.jpg"></img>
-                            <img class="item" ng-click="vm.select('blue')" src="/content/img/blue.jpg"></img>
-                            <img class="item" ng-click="vm.select('boobs2')" src="/content/img/boobs2.jpg"></img>
-                            <img class="item" ng-click="vm.select('crazy-monsters')" src="/content/img/limbs.jpg"></img>
-                            <img class="item" ng-click="vm.select('crazy-monsters')" src="/content/img/crazy-monsters.jpg"></img>
-                            <img class="item" ng-click="vm.select('yellow')" src="/content/img/yellow.jpg"></img>
+                           <img class="item" ng-click="vm.select('boobs')" src="content/img/boobs.jpg"></img>
+                            <img class="item" ng-click="vm.select('blue')" src="content/img/blue.jpg"></img>
+                            <img class="item" ng-click="vm.select('boobs2')" src="content/img/boobs2.jpg"></img>
+                            <img class="item" ng-click="vm.select('crazy-monsters')" src="content/img/limbs.jpg"></img>
+                            <img class="item" ng-click="vm.select('crazy-monsters')" src="content/img/crazy-monsters.jpg"></img>
+                            <img class="item" ng-click="vm.select('yellow')" src="content/img/yellow.jpg"></img>
                        </div>
                        <div class="column">
-                           <img class="item" ng-click="vm.select('face')" src="/content/img/spine.jpg"></img>
-                           <img class="item" ng-click="vm.select('face')" src="/content/img/green-spider.jpg"></img>
-                           <img class="item" ng-click="vm.select('face')" src="/content/img/face.jpg"></img>
-                            <img class="item" ng-click="vm.select('faces-of-liz')" src="/content/img/faces-of-liz.jpg"></img>
-                            <img class="item" ng-click="vm.select('fish')" src="/content/img/fish.jpg"></img>
-                            <img class="item" ng-click="vm.select('head')" src="/content/img/head.jpg"></img>
-                            <img class="item" ng-click="vm.select('hip-bones')" src="/content/img/hip-bones.jpg"></img>
+                           <img class="item" ng-click="vm.select('face')" src="content/img/spine.jpg"></img>
+                           <img class="item" ng-click="vm.select('face')" src="content/img/green-spider.jpg"></img>
+                           <img class="item" ng-click="vm.select('face')" src="content/img/face.jpg"></img>
+                            <img class="item" ng-click="vm.select('faces-of-liz')" src="content/img/faces-of-liz.jpg"></img>
+                            <img class="item" ng-click="vm.select('fish')" src="content/img/fish.jpg"></img>
+                            <img class="item" ng-click="vm.select('head')" src="content/img/head.jpg"></img>
+                            <img class="item" ng-click="vm.select('hip-bones')" src="content/img/hip-bones.jpg"></img>
                        </div>
                         <div class="column">
-                            <img class="item" ng-click="vm.select('naked')" src="/content/img/naked.jpg"></img>
-                            <img class="item" ng-click="vm.select('palace')" src="/content/img/diving-into-oblivion.jpg"></img>
-                            <img class="item" ng-click="vm.select('palace')" src="/content/img/palace.jpg"></img>
-                            <img class="item" ng-click="vm.select('pelvis')" src="/content/img/pelvis.jpg"></img>
-                            <img class="item" ng-click="vm.select('strange')" src="/content/img/strange.jpg"></img>
-                            <img class="item" ng-click="vm.select('winos')" src="/content/img/winos.jpg"></img>
+                            <img class="item" ng-click="vm.select('naked')" src="content/img/naked.jpg"></img>
+                            <img class="item" ng-click="vm.select('palace')" src="content/img/diving-into-oblivion.jpg"></img>
+                            <img class="item" ng-click="vm.select('palace')" src="content/img/palace.jpg"></img>
+                            <img class="item" ng-click="vm.select('pelvis')" src="content/img/pelvis.jpg"></img>
+                            <img class="item" ng-click="vm.select('strange')" src="content/img/strange.jpg"></img>
+                            <img class="item" ng-click="vm.select('winos')" src="content/img/winos.jpg"></img>
                         </div>
                    </div>
                 </div>
@@ -143,54 +143,54 @@
                 <div class="col-xs-8 main-content" ng-if="vm.state === 'sketches'">
                     <div id="gallery" >
                        <div class="column2">
-                           <img class="item" src="/content/img/sketches/001.jpg"></img>
-                           <img class="item" src="/content/img/sketches/002.jpg"></img>
-                           <img class="item" src="/content/img/sketches/003.jpg"></img>
-                           <img class="item" src="/content/img/sketches/004.jpg"></img>                             
-                           <img class="item" src="/content/img/sketches/007.jpg"></img>
-                           <img class="item" src="/content/img/sketches/008.jpg"></img>  
-                           <img class="item" src="/content/img/ants/009.jpg"></img>                       
+                           <img class="item" src="content/img/sketches/001.jpg"></img>
+                           <img class="item" src="content/img/sketches/002.jpg"></img>
+                           <img class="item" src="content/img/sketches/003.jpg"></img>
+                           <img class="item" src="content/img/sketches/004.jpg"></img>                             
+                           <img class="item" src="content/img/sketches/007.jpg"></img>
+                           <img class="item" src="content/img/sketches/008.jpg"></img>  
+                           <img class="item" src="content/img/ants/009.jpg"></img>                       
                        </div>
                        <div class="column2">
-                           <img class="item" src="/content/img/sketches/005.jpg"></img>
-                           <img class="item" src="/content/img/sketches/006.jpg"></img>
-                           <img class="item" src="/content/img/ants/005.jpg"></img>
-                           <img class="item" src="/content/img/ants/010.jpg"></img>
+                           <img class="item" src="content/img/sketches/005.jpg"></img>
+                           <img class="item" src="content/img/sketches/006.jpg"></img>
+                           <img class="item" src="content/img/ants/005.jpg"></img>
+                           <img class="item" src="content/img/ants/010.jpg"></img>
                        </div>
                        <div class="column2">
-                           <img class="item" src="/content/img/sketches/009.jpg"></img>
-                           <img class="item" src="/content/img/ants/003.jpg"></img>
-                           <img class="item" src="/content/img/sketches/010.jpg"></img>
-                           <img class="item" src="/content/img/sketches/011.jpg"></img>
-                           <img class="item" src="/content/img/ants/004.jpg"></img>
-                           <img class="item" src="/content/img/sketches/012.jpg"></img>
+                           <img class="item" src="content/img/sketches/009.jpg"></img>
+                           <img class="item" src="content/img/ants/003.jpg"></img>
+                           <img class="item" src="content/img/sketches/010.jpg"></img>
+                           <img class="item" src="content/img/sketches/011.jpg"></img>
+                           <img class="item" src="content/img/ants/004.jpg"></img>
+                           <img class="item" src="content/img/sketches/012.jpg"></img>
                        </div>
                        <div class="column2">
-                           <img class="item" src="/content/img/sketches/013.jpg"></img>
-                           <img class="item" src="/content/img/sketches/014.jpg"></img>
-                           <img class="item" src="/content/img/sketches/015.jpg"></img>
-                           <img class="item" src="/content/img/ants/006.jpg"></img>
-                           <img class="item" src="/content/img/sketches/016.jpg"></img>
-                           <img class="item" src="/content/img/sketches/023.jpg"></img>
-                           <img class="item" src="/content/img/sketches/024.jpg"></img>
-                           <img class="item" src="/content/img/ants/008.jpg"></img>
-                           <img class="item" src="/content/img/sketches/022.jpg"></img>
+                           <img class="item" src="content/img/sketches/013.jpg"></img>
+                           <img class="item" src="content/img/sketches/014.jpg"></img>
+                           <img class="item" src="content/img/sketches/015.jpg"></img>
+                           <img class="item" src="content/img/ants/006.jpg"></img>
+                           <img class="item" src="content/img/sketches/016.jpg"></img>
+                           <img class="item" src="content/img/sketches/023.jpg"></img>
+                           <img class="item" src="content/img/sketches/024.jpg"></img>
+                           <img class="item" src="content/img/ants/008.jpg"></img>
+                           <img class="item" src="content/img/sketches/022.jpg"></img>
                            
                        </div>
                        <div class="column2">
-                           <img class="item" src="/content/img/ants/002.jpg"></img>
-                           <img class="item" src="/content/img/sketches/017.jpg"></img>
+                           <img class="item" src="content/img/ants/002.jpg"></img>
+                           <img class="item" src="content/img/sketches/017.jpg"></img>
 
-                           <img class="item" src="/content/img/ants/001.jpg"></img>
-                           <img class="item" src="/content/img/ants/012.jpg"></img>
-                           <img class="item" src="/content/img/sketches/018.jpg"></img>
-                           <img class="item" src="/content/img/ants/007.jpg"></img>
-                           <img class="item" src="/content/img/sketches/019.jpg"></img>
-                           <img class="item" src="/content/img/sketches/020.jpg"></img>
+                           <img class="item" src="content/img/ants/001.jpg"></img>
+                           <img class="item" src="content/img/ants/012.jpg"></img>
+                           <img class="item" src="content/img/sketches/018.jpg"></img>
+                           <img class="item" src="content/img/ants/007.jpg"></img>
+                           <img class="item" src="content/img/sketches/019.jpg"></img>
+                           <img class="item" src="content/img/sketches/020.jpg"></img>
                        </div>
                        <div class="column2">
-                           <img class="item" src="/content/img/sketches/021.jpg"></img>
-                           <img class="item" src="/content/img/ants/011.jpg"></img>
+                           <img class="item" src="content/img/sketches/021.jpg"></img>
+                           <img class="item" src="content/img/ants/011.jpg"></img>
                        </div>
                    </div>
                 </div>
