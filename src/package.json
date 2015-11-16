@@ -1,11 +1,7 @@
 {
   "name": "elknox.com",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "a blog for elizabeth l knox",
   "repository": {
     "type": "git",
     "url": "git@github.com:revlucio/elknox.com.git"
@@ -13,11 +9,15 @@
   "author": "revlucio",
   "license": "ISC",
   "devDependencies": {
+    "css-sprite": "^0.9.8",
     "del": "^1.1.1",
     "gulp": "^3.8.11",
     "gulp-angular-templatecache": "^1.6.0",
     "gulp-clean": "^0.3.1",
     "gulp-concat": "^2.5.2",
-    "gulp-replace": "^0.5.3"
+    "gulp-if": "^1.2.5",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-replace": "^0.5.3",
+    "gulp.spritesmith": "^3.5.4"
   }
 }

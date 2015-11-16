@@ -3,6 +3,9 @@ var concat = require('gulp-concat');
 var replace = require('gulp-replace');
 var del = require('del');
 var templateCache = require('gulp-angular-templatecache');
+var imagemin = require('gulp-imagemin');
+var gulpif = require('gulp-if');
+var sprite = require('css-sprite').stream;
 
 var filename = 'app.' + Date.now() + '.';
 
@@ -16,6 +19,19 @@ gulp.task('build', function() {
 			'scripts/**/*.js'])
     	.pipe(concat(filename + 'js'))
     	.pipe(gulp.dest('dist'));
+
+//    gulp.src(['img/**/*.jpg', 'img/**/*.gif'])
+//        .pipe(imagemin({ optimizationLevel: 3, progessive: true, interlaced: true })
+//        .pipe(gulp.dest('dist/content')));
+
+    gulp.src('img/art/*.jpg')
+        .pipe(sprite({
+          name: 'sprite',
+          style: '_sprite.css',
+          cssPath: '.',
+          processor: 'css'
+        }))
+        .pipe(gulpif('*.png', gulp.dest('dist/img'), gulp.dest('css')))
 
     gulp.src(['css/**/*.css', 'css/**/*.css'])
         .pipe(concat(filename + 'css'))
